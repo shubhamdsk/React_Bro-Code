@@ -1,0 +1,50 @@
+Components help us write reusable, modular and better organized code.
+
+npm create vite@latest
+npm i 
+npm run dev
+
+react is js library for building user interfaces.
+Library - a tool that provides specific functionality
+Framework - A set of tools and guidelines for building apps.
+
+npm i bootstrap@latest 
+
+paste in App.css
+import 'bootstrap/dist/css/bootstrap.css'
+
+
+  const cities = [
+    "Mumbai",
+    "Pune",
+    "Nasik",
+    "Delhi",
+    "Bangalore",
+    "Chennai",
+    "Hyderabad",
+    "Kolkata",
+    "Ahmedabad",
+    "Surat",
+  ];
+
+<ul>
+{cities.map((city)=>(<li>{city}</li>))}
+</ul>
+
+# add a CSS - modular, external,inline
+
+* props: read-only properties that are shared between components
+        A parent component can send data to a child component
+        <component key=value >
+
+* propTypes - a mechanism that ensures that the passed value is of the correct data types
+              import PropTypes from 'prop-types'
+
+//age : PropTypes.number 
+fun_name.propTypes={
+age : PropTypes.number,
+name : PropTypes.string,
+}
+
+* defaultProps - default values for props in case they are not passed from the parent component
+		e.g name = "Rohit"
