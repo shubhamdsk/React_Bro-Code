@@ -3,6 +3,7 @@ import Cards from "./Components/Cards";
 import Button from "./Buttons/Button";
 import Student from "./Components/Student";
 import UserGreeting from "./Components/UserGreeting";
+import List from "./Components/List";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Student name="Nikhil" age={23} phone={7083781599} />
       <Student name="Swayam" phone={7083781599} />
       <Student />
+      <List />
       <InlineCSSButton />
       <Button />
     </>
